@@ -110,7 +110,7 @@ U 1 1 5BEDF7D1
 P 6250 2250
 F 0 "J8" H 6170 1925 50  0000 C CNN
 F 1 "Liaison serie" H 6170 2016 50  0000 C CNN
-F 2 "@Robot:HE14-3-straight" H 6250 2250 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal" H 6250 2250 50  0001 C CNN
 F 3 "~" H 6250 2250 50  0001 C CNN
 	1    6250 2250
 	-1   0    0    1   
@@ -132,7 +132,7 @@ F 3 "" H 6550 2350 50  0001 C CNN
 	1    6550 2350
 	1    0    0    -1  
 $EndComp
-Text Label 6550 2150 0    50   ~ 0
+Text Label 6550 2250 0    50   ~ 0
 TX
 Text Notes 6250 850  0    118  ~ 0
 Connectique
@@ -186,7 +186,7 @@ U 1 1 5C08F1FF
 P 1200 1250
 F 0 "J3" H 1120 925 50  0000 C CNN
 F 1 "Alim logique" H 1120 1016 50  0000 C CNN
-F 2 "@Robot:HE14-3-straight" H 1200 1250 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal" H 1200 1250 50  0001 C CNN
 F 3 "~" H 1200 1250 50  0001 C CNN
 	1    1200 1250
 	-1   0    0    1   
@@ -411,19 +411,8 @@ B13
 Text Notes 1300 3200 0    50   ~ 0
 B12
 NoConn ~ 2350 5100
-NoConn ~ 2350 5000
-NoConn ~ 2350 4900
-NoConn ~ 2350 4800
-NoConn ~ 2350 4600
-NoConn ~ 2350 4400
-NoConn ~ 2350 3800
 NoConn ~ 2350 3500
-NoConn ~ 1050 4700
-NoConn ~ 1050 4500
-NoConn ~ 1050 4300
-NoConn ~ 1050 3700
 NoConn ~ 1050 3500
-NoConn ~ 1050 3300
 $Comp
 L Device:Q_NMOS_GSD Q1
 U 1 1 5C3683D7
@@ -660,62 +649,38 @@ Text Label 2350 4200 0    50   ~ 0
 SCK
 Text Label 1050 3900 2    50   ~ 0
 CS
-Text Label 6550 2250 0    50   ~ 0
+Text Label 6550 2150 0    50   ~ 0
 RX
 $Comp
-L Connector_Generic:Conn_01x03 J11
+L Connector_Generic:Conn_01x02 J11
 U 1 1 5CA67F33
-P 7000 2250
-F 0 "J11" H 6920 1925 50  0000 C CNN
-F 1 "Tirette" H 6920 2016 50  0000 C CNN
-F 2 "@Robot:HE14-3-straight" H 7000 2250 50  0001 C CNN
-F 3 "~" H 7000 2250 50  0001 C CNN
-	1    7000 2250
+P 7000 2300
+F 0 "J11" H 6920 1975 50  0000 C CNN
+F 1 "Tirette" H 6920 2066 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 7000 2300 50  0001 C CNN
+F 3 "~" H 7000 2300 50  0001 C CNN
+	1    7000 2300
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7200 2350 7300 2350
-$Comp
-L power:GND #PWR0121
-U 1 1 5CA67F3D
-P 7300 2350
-F 0 "#PWR0121" H 7300 2100 50  0001 C CNN
-F 1 "GND" H 7305 2177 50  0000 C CNN
-F 2 "" H 7300 2350 50  0001 C CNN
-F 3 "" H 7300 2350 50  0001 C CNN
-	1    7300 2350
-	1    0    0    -1  
-$EndComp
+	7200 2200 7300 2200
 Wire Wire Line
-	7200 2150 7300 2150
-Wire Wire Line
-	7300 2150 7300 2050
-$Comp
-L power:+5V #PWR0122
-U 1 1 5CA6AAFF
-P 7300 2050
-F 0 "#PWR0122" H 7300 1900 50  0001 C CNN
-F 1 "+5V" V 7315 2178 50  0000 L CNN
-F 2 "" H 7300 2050 50  0001 C CNN
-F 3 "" H 7300 2050 50  0001 C CNN
-	1    7300 2050
-	1    0    0    -1  
-$EndComp
+	7300 2200 7300 2100
 Text Label 2350 3700 0    50   ~ 0
 TX
 Text Label 2350 3600 0    50   ~ 0
 RX
-Text Label 1050 4000 2    50   ~ 0
+Text Label 2350 3800 0    50   ~ 0
 out_tirette
 $Comp
 L Connector_Generic:Conn_01x04 J9
 U 1 1 5CA71C26
-P 8450 1150
-F 0 "J9" H 8370 725 50  0000 C CNN
-F 1 "capteur_couleur_alim" H 8370 816 50  0000 C CNN
-F 2 "@Robot:HE14-4-straight" H 8450 1150 50  0001 C CNN
-F 3 "~" H 8450 1150 50  0001 C CNN
-	1    8450 1150
+P 7950 1150
+F 0 "J9" H 7870 725 50  0000 C CNN
+F 1 "capteur_couleur_alim" H 7870 816 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal" H 7950 1150 50  0001 C CNN
+F 3 "~" H 7950 1150 50  0001 C CNN
+	1    7950 1150
 	-1   0    0    1   
 $EndComp
 Wire Notes Line
@@ -725,91 +690,56 @@ Wire Notes Line
 $Comp
 L Connector_Generic:Conn_01x04 J10
 U 1 1 5CA73302
-P 8450 1800
-F 0 "J10" H 8370 1375 50  0000 C CNN
-F 1 "capteur_couleur_S" H 8370 1466 50  0000 C CNN
-F 2 "@Robot:HE14-4-straight" H 8450 1800 50  0001 C CNN
-F 3 "~" H 8450 1800 50  0001 C CNN
-	1    8450 1800
+P 7950 1800
+F 0 "J10" H 7870 1375 50  0000 C CNN
+F 1 "capteur_couleur_S" H 7870 1466 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal" H 7950 1800 50  0001 C CNN
+F 3 "~" H 7950 1800 50  0001 C CNN
+	1    7950 1800
 	-1   0    0    1   
 $EndComp
-Text Label 8650 1900 0    50   ~ 0
+Text Label 8150 1900 0    50   ~ 0
 S0
-Text Label 8650 1800 0    50   ~ 0
+Text Label 8150 1800 0    50   ~ 0
 S1
-Text Label 8650 1700 0    50   ~ 0
+Text Label 8150 1700 0    50   ~ 0
 S2
-Text Label 8650 1600 0    50   ~ 0
+Text Label 8150 1600 0    50   ~ 0
 S3
 $Comp
 L power:+5V #PWR0123
 U 1 1 5CA7408A
-P 8650 1250
-F 0 "#PWR0123" H 8650 1100 50  0001 C CNN
-F 1 "+5V" V 8665 1378 50  0000 L CNN
-F 2 "" H 8650 1250 50  0001 C CNN
-F 3 "" H 8650 1250 50  0001 C CNN
-	1    8650 1250
+P 8150 1250
+F 0 "#PWR0123" H 8150 1100 50  0001 C CNN
+F 1 "+5V" V 8165 1378 50  0000 L CNN
+F 2 "" H 8150 1250 50  0001 C CNN
+F 3 "" H 8150 1250 50  0001 C CNN
+	1    8150 1250
 	0    1    1    0   
 $EndComp
-Text Label 8650 950  0    50   ~ 0
+Text Label 8150 950  0    50   ~ 0
 LED_couleur
-Text Label 8650 1050 0    50   ~ 0
+Text Label 8150 1050 0    50   ~ 0
 out_couleur
 $Comp
 L power:GND #PWR0124
 U 1 1 5CA77A6E
-P 8650 1150
-F 0 "#PWR0124" H 8650 900 50  0001 C CNN
-F 1 "GND" V 8655 1022 50  0000 R CNN
-F 2 "" H 8650 1150 50  0001 C CNN
-F 3 "" H 8650 1150 50  0001 C CNN
-	1    8650 1150
+P 8150 1150
+F 0 "#PWR0124" H 8150 900 50  0001 C CNN
+F 1 "GND" V 8155 1022 50  0000 R CNN
+F 2 "" H 8150 1150 50  0001 C CNN
+F 3 "" H 8150 1150 50  0001 C CNN
+	1    8150 1150
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7200 2250 7500 2250
-Wire Wire Line
-	7500 2250 7500 2300
-$Comp
-L power:GND #PWR0125
-U 1 1 5CAF6C78
-P 7500 2600
-F 0 "#PWR0125" H 7500 2350 50  0001 C CNN
-F 1 "GND" H 7505 2427 50  0000 C CNN
-F 2 "" H 7500 2600 50  0001 C CNN
-F 3 "" H 7500 2600 50  0001 C CNN
-	1    7500 2600
-	1    0    0    -1  
-$EndComp
-Connection ~ 7500 2250
-Wire Wire Line
-	7500 2250 7600 2250
-Text Label 7600 2250 0    50   ~ 0
+Text Label 7350 2300 0    50   ~ 0
 out_tirette
-Text Label 2350 4700 0    50   ~ 0
+Text Label 2350 4500 0    50   ~ 0
 LED_couleur
-Text Label 1050 4200 2    50   ~ 0
-S3
-Text Label 1050 4400 2    50   ~ 0
-S2
-Text Label 1050 4600 2    50   ~ 0
-S1
 Text Label 1050 4800 2    50   ~ 0
 S0
-Text Label 2350 4500 0    50   ~ 0
+Text Label 2350 4400 0    50   ~ 0
 out_couleur
-$Comp
-L Device:R R7
-U 1 1 5CC87152
-P 7500 2450
-F 0 "R7" H 7570 2496 50  0000 L CNN
-F 1 "10k" H 7570 2405 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7430 2450 50  0001 C CNN
-F 3 "~" H 7500 2450 50  0001 C CNN
-	1    7500 2450
-	1    0    0    -1  
-$EndComp
 Text Label 1050 3200 2    50   ~ 0
 led_hardfault
 Text Label 1050 3400 2    50   ~ 0
@@ -817,16 +747,16 @@ led_feedback
 Text Label 1050 3600 2    50   ~ 0
 led_communication
 Wire Wire Line
-	8650 1050 9100 1050
+	8150 1050 8600 1050
 $Comp
 L Connector:TestPoint_Probe TP1
 U 1 1 5CC8D7A4
-P 9100 1050
-F 0 "TP1" H 9253 1152 50  0000 L CNN
-F 1 "TestPoint_Probe" H 9253 1061 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 9300 1050 50  0001 C CNN
-F 3 "~" H 9300 1050 50  0001 C CNN
-	1    9100 1050
+P 8600 1050
+F 0 "TP1" H 8753 1152 50  0000 L CNN
+F 1 "TestPoint_Probe" H 8753 1061 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 8800 1050 50  0001 C CNN
+F 3 "~" H 8800 1050 50  0001 C CNN
+	1    8600 1050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -964,7 +894,6 @@ $EndComp
 Connection ~ 4200 1300
 Wire Wire Line
 	4200 1300 4450 1300
-NoConn ~ 3000 4550
 $Comp
 L power:+5V #PWR0133
 U 1 1 5CCB0A44
@@ -976,19 +905,392 @@ F 3 "" H 1050 4100 50  0001 C CNN
 	1    1050 4100
 	0    -1   -1   0   
 $EndComp
+NoConn ~ 3950 4600
 $Comp
-L power:+5V #PWR0134
-U 1 1 5CCB112F
+L Connector_Generic:Conn_01x03 J12
+U 1 1 5CD45D46
+P 8550 1750
+F 0 "J12" H 8470 1425 50  0000 C CNN
+F 1 "Buzzer" H 8470 1516 50  0000 C CNN
+F 2 "@Robot:HE14-3-straight" H 8550 1750 50  0001 C CNN
+F 3 "~" H 8550 1750 50  0001 C CNN
+	1    8550 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8750 1850 8850 1850
+Wire Wire Line
+	8750 1750 8850 1750
+Wire Wire Line
+	8750 1650 8850 1650
+$Comp
+L power:GND #PWR0125
+U 1 1 5CD45D50
+P 8850 1850
+F 0 "#PWR0125" H 8850 1600 50  0001 C CNN
+F 1 "GND" H 8855 1677 50  0000 C CNN
+F 2 "" H 8850 1850 50  0001 C CNN
+F 3 "" H 8850 1850 50  0001 C CNN
+	1    8850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0135
+U 1 1 5CD47570
+P 8850 1650
+F 0 "#PWR0135" H 8850 1500 50  0001 C CNN
+F 1 "+5V" H 8865 1823 50  0000 C CNN
+F 2 "" H 8850 1650 50  0001 C CNN
+F 3 "" H 8850 1650 50  0001 C CNN
+	1    8850 1650
+	1    0    0    -1  
+$EndComp
+Text Label 8850 1750 0    50   ~ 0
+buzzer
+Text Label 1050 3800 2    50   ~ 0
+buzzer
+Wire Wire Line
+	7200 2300 7350 2300
+Wire Wire Line
+	1150 5950 1250 5950
+Wire Wire Line
+	1250 5950 1250 5850
+$Comp
+L power:+5V #PWR0136
+U 1 1 5CDDBAA1
+P 1250 5850
+F 0 "#PWR0136" H 1250 5700 50  0001 C CNN
+F 1 "+5V" V 1265 5978 50  0000 L CNN
+F 2 "" H 1250 5850 50  0001 C CNN
+F 3 "" H 1250 5850 50  0001 C CNN
+	1    1250 5850
+	1    0    0    -1  
+$EndComp
+Text Label 1300 6050 0    50   ~ 0
+fin_course_1
+Wire Wire Line
+	1150 6050 1300 6050
+$Comp
+L Connector_Generic:Conn_01x02 J13
+U 1 1 5CDDBA91
+P 950 6050
+F 0 "J13" H 870 5725 50  0000 C CNN
+F 1 "FinCourse1" H 870 5816 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 950 6050 50  0001 C CNN
+F 3 "~" H 950 6050 50  0001 C CNN
+	1    950  6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 6500 1250 6500
+Wire Wire Line
+	1250 6500 1250 6400
+$Comp
+L power:+5V #PWR0137
+U 1 1 5CDE055E
+P 1250 6400
+F 0 "#PWR0137" H 1250 6250 50  0001 C CNN
+F 1 "+5V" V 1265 6528 50  0000 L CNN
+F 2 "" H 1250 6400 50  0001 C CNN
+F 3 "" H 1250 6400 50  0001 C CNN
+	1    1250 6400
+	1    0    0    -1  
+$EndComp
+Text Label 1300 6600 0    50   ~ 0
+fin_course_2
+Wire Wire Line
+	1150 6600 1300 6600
+$Comp
+L Connector_Generic:Conn_01x02 J14
+U 1 1 5CDE0566
+P 950 6600
+F 0 "J14" H 870 6275 50  0000 C CNN
+F 1 "FinCourse2" H 870 6366 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 950 6600 50  0001 C CNN
+F 3 "~" H 950 6600 50  0001 C CNN
+	1    950  6600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 7050 1250 7050
+Wire Wire Line
+	1250 7050 1250 6950
+$Comp
+L power:+5V #PWR0138
+U 1 1 5CDE0E88
+P 1250 6950
+F 0 "#PWR0138" H 1250 6800 50  0001 C CNN
+F 1 "+5V" V 1265 7078 50  0000 L CNN
+F 2 "" H 1250 6950 50  0001 C CNN
+F 3 "" H 1250 6950 50  0001 C CNN
+	1    1250 6950
+	1    0    0    -1  
+$EndComp
+Text Label 1300 7150 0    50   ~ 0
+fin_course_3
+Wire Wire Line
+	1150 7150 1300 7150
+$Comp
+L Connector_Generic:Conn_01x02 J15
+U 1 1 5CDE0E90
+P 950 7150
+F 0 "J15" H 870 6825 50  0000 C CNN
+F 1 "FinCourse3" H 870 6916 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 950 7150 50  0001 C CNN
+F 3 "~" H 950 7150 50  0001 C CNN
+	1    950  7150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 5950 2250 5950
+Wire Wire Line
+	2250 5950 2250 5850
+$Comp
+L power:+5V #PWR0139
+U 1 1 5CDE1940
+P 2250 5850
+F 0 "#PWR0139" H 2250 5700 50  0001 C CNN
+F 1 "+5V" V 2265 5978 50  0000 L CNN
+F 2 "" H 2250 5850 50  0001 C CNN
+F 3 "" H 2250 5850 50  0001 C CNN
+	1    2250 5850
+	1    0    0    -1  
+$EndComp
+Text Label 2300 6050 0    50   ~ 0
+fin_course_4
+Wire Wire Line
+	2150 6050 2300 6050
+$Comp
+L Connector_Generic:Conn_01x02 J16
+U 1 1 5CDE1948
+P 1950 6050
+F 0 "J16" H 1870 5725 50  0000 C CNN
+F 1 "FinCourse4" H 1870 5816 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 1950 6050 50  0001 C CNN
+F 3 "~" H 1950 6050 50  0001 C CNN
+	1    1950 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 6500 2250 6500
+Wire Wire Line
+	2250 6500 2250 6400
+$Comp
+L power:+5V #PWR0140
+U 1 1 5CDE30F3
+P 2250 6400
+F 0 "#PWR0140" H 2250 6250 50  0001 C CNN
+F 1 "+5V" V 2265 6528 50  0000 L CNN
+F 2 "" H 2250 6400 50  0001 C CNN
+F 3 "" H 2250 6400 50  0001 C CNN
+	1    2250 6400
+	1    0    0    -1  
+$EndComp
+Text Label 2300 6600 0    50   ~ 0
+fin_course_5
+Wire Wire Line
+	2150 6600 2300 6600
+$Comp
+L Connector_Generic:Conn_01x02 J17
+U 1 1 5CDE30FB
+P 1950 6600
+F 0 "J17" H 1870 6275 50  0000 C CNN
+F 1 "FinCourse5" H 1870 6366 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 1950 6600 50  0001 C CNN
+F 3 "~" H 1950 6600 50  0001 C CNN
+	1    1950 6600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 7050 2250 7050
+Wire Wire Line
+	2250 7050 2250 6950
+$Comp
+L power:+5V #PWR0141
+U 1 1 5CDE3E59
+P 2250 6950
+F 0 "#PWR0141" H 2250 6800 50  0001 C CNN
+F 1 "+5V" V 2265 7078 50  0000 L CNN
+F 2 "" H 2250 6950 50  0001 C CNN
+F 3 "" H 2250 6950 50  0001 C CNN
+	1    2250 6950
+	1    0    0    -1  
+$EndComp
+Text Label 2300 7150 0    50   ~ 0
+fin_course_6
+Wire Wire Line
+	2150 7150 2300 7150
+$Comp
+L Connector_Generic:Conn_01x02 J18
+U 1 1 5CDE3E61
+P 1950 7150
+F 0 "J18" H 1870 6825 50  0000 C CNN
+F 1 "FinCourse6" H 1870 6916 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 1950 7150 50  0001 C CNN
+F 3 "~" H 1950 7150 50  0001 C CNN
+	1    1950 7150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3200 5950 3300 5950
+Wire Wire Line
+	3300 5950 3300 5850
+$Comp
+L power:+5V #PWR0142
+U 1 1 5CDE50E3
+P 3300 5850
+F 0 "#PWR0142" H 3300 5700 50  0001 C CNN
+F 1 "+5V" V 3315 5978 50  0000 L CNN
+F 2 "" H 3300 5850 50  0001 C CNN
+F 3 "" H 3300 5850 50  0001 C CNN
+	1    3300 5850
+	1    0    0    -1  
+$EndComp
+Text Label 3350 6050 0    50   ~ 0
+fin_course_7
+Wire Wire Line
+	3200 6050 3350 6050
+$Comp
+L Connector_Generic:Conn_01x02 J19
+U 1 1 5CDE50EB
+P 3000 6050
+F 0 "J19" H 2920 5725 50  0000 C CNN
+F 1 "FinCourse7" H 2920 5816 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 3000 6050 50  0001 C CNN
+F 3 "~" H 3000 6050 50  0001 C CNN
+	1    3000 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3200 6500 3300 6500
+Wire Wire Line
+	3300 6500 3300 6400
+$Comp
+L power:+5V #PWR0143
+U 1 1 5CDE6171
+P 3300 6400
+F 0 "#PWR0143" H 3300 6250 50  0001 C CNN
+F 1 "+5V" V 3315 6528 50  0000 L CNN
+F 2 "" H 3300 6400 50  0001 C CNN
+F 3 "" H 3300 6400 50  0001 C CNN
+	1    3300 6400
+	1    0    0    -1  
+$EndComp
+Text Label 3350 6600 0    50   ~ 0
+fin_course_8
+Wire Wire Line
+	3200 6600 3350 6600
+$Comp
+L Connector_Generic:Conn_01x02 J20
+U 1 1 5CDE6179
+P 3000 6600
+F 0 "J20" H 2920 6275 50  0000 C CNN
+F 1 "FinCourse8" H 2920 6366 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 3000 6600 50  0001 C CNN
+F 3 "~" H 3000 6600 50  0001 C CNN
+	1    3000 6600
+	-1   0    0    1   
+$EndComp
+Text Label 1050 4700 2    50   ~ 0
+S1
+Text Label 1050 4600 2    50   ~ 0
+S2
+Text Label 1050 4500 2    50   ~ 0
+S3
+Text Label 2350 4600 0    50   ~ 0
+fin_course_1
+Text Label 2350 4700 0    50   ~ 0
+fin_course_2
+Text Label 2350 4800 0    50   ~ 0
+fin_course_3
+Text Label 2350 4900 0    50   ~ 0
+fin_course_4
+Text Label 1050 4200 2    50   ~ 0
+fin_course_6
+Text Label 2350 5000 0    50   ~ 0
+fin_course_5
+Text Label 1050 4300 2    50   ~ 0
+fin_course_7
+Text Label 1050 4400 2    50   ~ 0
+fin_course_8
+Wire Wire Line
+	8300 2500 8400 2500
+$Comp
+L power:+5V #PWR0121
+U 1 1 5CDE2021
+P 8400 2500
+F 0 "#PWR0121" H 8400 2350 50  0001 C CNN
+F 1 "+5V" V 8415 2628 50  0000 L CNN
+F 2 "" H 8400 2500 50  0001 C CNN
+F 3 "" H 8400 2500 50  0001 C CNN
+	1    8400 2500
+	1    0    0    -1  
+$EndComp
+Text Label 8550 2700 0    50   ~ 0
+piston
+$Comp
+L Connector_Generic:Conn_01x03 J21
+U 1 1 5CDE2029
+P 8100 2600
+F 0 "J21" H 8020 2275 50  0000 C CNN
+F 1 "Piston" H 8020 2366 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal" H 8100 2600 50  0001 C CNN
+F 3 "~" H 8100 2600 50  0001 C CNN
+	1    8100 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5CDE3781
+P 8300 2600
+F 0 "#PWR0122" H 8300 2350 50  0001 C CNN
+F 1 "GND" H 8305 2427 50  0000 C CNN
+F 2 "" H 8300 2600 50  0001 C CNN
+F 3 "" H 8300 2600 50  0001 C CNN
+	1    8300 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0144
+U 1 1 5CDE741C
+P 7300 2100
+F 0 "#PWR0144" H 7300 1950 50  0001 C CNN
+F 1 "+3.3V" H 7315 2273 50  0000 C CNN
+F 2 "" H 7300 2100 50  0001 C CNN
+F 3 "" H 7300 2100 50  0001 C CNN
+	1    7300 2100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1050 4000
+NoConn ~ 8400 1700
+NoConn ~ 9050 2250
+NoConn ~ 8700 2150
+Text Label 1050 3700 2    50   ~ 0
+piston
+Wire Wire Line
+	8300 2700 8550 2700
+$Comp
+L power:GND #PWR0134
+U 1 1 5CE220EB
 P 2350 4300
-F 0 "#PWR0134" H 2350 4150 50  0001 C CNN
-F 1 "+5V" V 2365 4428 50  0000 L CNN
+F 0 "#PWR0134" H 2350 4050 50  0001 C CNN
+F 1 "GND" V 2355 4172 50  0000 R CNN
 F 2 "" H 2350 4300 50  0001 C CNN
 F 3 "" H 2350 4300 50  0001 C CNN
 	1    2350 4300
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
-NoConn ~ 1050 3800
 NoConn ~ 2350 3900
-NoConn ~ 2700 4400
-NoConn ~ 3950 4600
+NoConn ~ 8850 800 
+$Comp
+L power:GND #PWR?
+U 1 1 5CE263A9
+P 1050 3300
+F 0 "#PWR?" H 1050 3050 50  0001 C CNN
+F 1 "GND" V 1055 3172 50  0000 R CNN
+F 2 "" H 1050 3300 50  0001 C CNN
+F 3 "" H 1050 3300 50  0001 C CNN
+	1    1050 3300
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC
