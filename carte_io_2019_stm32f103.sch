@@ -926,13 +926,13 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0125
 U 1 1 5CD45D50
-P 8850 1850
-F 0 "#PWR0125" H 8850 1600 50  0001 C CNN
-F 1 "GND" H 8855 1677 50  0000 C CNN
-F 2 "" H 8850 1850 50  0001 C CNN
-F 3 "" H 8850 1850 50  0001 C CNN
-	1    8850 1850
-	1    0    0    -1  
+P 8850 1750
+F 0 "#PWR0125" H 8850 1500 50  0001 C CNN
+F 1 "GND" H 8855 1577 50  0000 C CNN
+F 2 "" H 8850 1750 50  0001 C CNN
+F 3 "" H 8850 1750 50  0001 C CNN
+	1    8850 1750
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR0135
@@ -945,7 +945,7 @@ F 3 "" H 8850 1650 50  0001 C CNN
 	1    8850 1650
 	1    0    0    -1  
 $EndComp
-Text Label 8850 1750 0    50   ~ 0
+Text Label 8850 1850 0    50   ~ 0
 buzzer
 Text Label 1050 3800 2    50   ~ 0
 buzzer
@@ -1261,10 +1261,6 @@ F 3 "" H 7300 2100 50  0001 C CNN
 	1    7300 2100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1050 4000
-NoConn ~ 8400 1700
-NoConn ~ 9050 2250
-NoConn ~ 8700 2150
 Text Label 1050 3700 2    50   ~ 0
 piston
 Wire Wire Line
@@ -1283,14 +1279,25 @@ $EndComp
 NoConn ~ 2350 3900
 NoConn ~ 8850 800 
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0145
 U 1 1 5CE263A9
 P 1050 3300
-F 0 "#PWR?" H 1050 3050 50  0001 C CNN
+F 0 "#PWR0145" H 1050 3050 50  0001 C CNN
 F 1 "GND" V 1055 3172 50  0000 R CNN
 F 2 "" H 1050 3300 50  0001 C CNN
 F 3 "" H 1050 3300 50  0001 C CNN
 	1    1050 3300
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CDECC4E
+P 1050 4000
+F 0 "#PWR?" H 1050 3750 50  0001 C CNN
+F 1 "GND" V 1055 3872 50  0000 R CNN
+F 2 "" H 1050 4000 50  0001 C CNN
+F 3 "" H 1050 4000 50  0001 C CNN
+	1    1050 4000
 	0    1    -1   0   
 $EndComp
 $EndSCHEMATC
