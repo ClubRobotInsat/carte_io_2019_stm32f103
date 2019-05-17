@@ -1,16 +1,16 @@
 EESchema Schematic File Version 4
 LIBS:carte_io_2019_stm32f103-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "Carte IO Petit robot"
+Date "2019-05-17"
+Rev "v1"
+Comp "Club Robot"
+Comment1 "Paul"
+Comment2 "Meis"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -623,12 +623,8 @@ Wire Notes Line
 	600  2650 2900 2650
 Wire Notes Line
 	600  5200 2900 5200
-Text Notes 7050 7050 0    100  ~ 0
-NOM : \nPrenom : \nClub Robot INSA : 
 Text Notes 9650 6700 0    100  ~ 0
 Année : 
-Text Notes 7350 7500 0    62   ~ 12
-Club Robot’s generic template
 NoConn ~ 1050 5100
 NoConn ~ 2350 3400
 NoConn ~ 4950 4600
