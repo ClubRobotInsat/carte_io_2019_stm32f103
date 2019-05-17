@@ -412,7 +412,6 @@ Text Notes 1300 3200 0    50   ~ 0
 B12
 NoConn ~ 2350 5100
 NoConn ~ 2350 3500
-NoConn ~ 1050 3500
 $Comp
 L Device:Q_NMOS_GSD Q1
 U 1 1 5C3683D7
@@ -742,9 +741,9 @@ Text Label 2350 4400 0    50   ~ 0
 out_couleur
 Text Label 1050 3200 2    50   ~ 0
 led_hardfault
-Text Label 1050 3400 2    50   ~ 0
+Text Label 2350 5000 0    50   ~ 0
 led_feedback
-Text Label 1050 3600 2    50   ~ 0
+Text Label 1050 3400 2    50   ~ 0
 led_communication
 Wire Wire Line
 	8150 1050 8600 1050
@@ -897,12 +896,12 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0133
 U 1 1 5CCB0A44
-P 1050 4100
-F 0 "#PWR0133" H 1050 3950 50  0001 C CNN
-F 1 "+5V" V 1065 4228 50  0000 L CNN
-F 2 "" H 1050 4100 50  0001 C CNN
-F 3 "" H 1050 4100 50  0001 C CNN
-	1    1050 4100
+P 1050 4000
+F 0 "#PWR0133" H 1050 3850 50  0001 C CNN
+F 1 "+5V" V 1065 4128 50  0000 L CNN
+F 2 "" H 1050 4000 50  0001 C CNN
+F 3 "" H 1050 4000 50  0001 C CNN
+	1    1050 4000
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 3950 4600
@@ -947,7 +946,7 @@ F 3 "" H 8850 1650 50  0001 C CNN
 $EndComp
 Text Label 8850 1850 0    50   ~ 0
 buzzer
-Text Label 1050 3800 2    50   ~ 0
+Text Label 1050 3700 2    50   ~ 0
 buzzer
 Wire Wire Line
 	7200 2300 7350 2300
@@ -1207,7 +1206,7 @@ Text Label 2350 4900 0    50   ~ 0
 fin_course_4
 Text Label 1050 4200 2    50   ~ 0
 fin_course_6
-Text Label 2350 5000 0    50   ~ 0
+Text Label 1050 4100 2    50   ~ 0
 fin_course_5
 Text Label 1050 4300 2    50   ~ 0
 fin_course_7
@@ -1261,7 +1260,7 @@ F 3 "" H 7300 2100 50  0001 C CNN
 	1    7300 2100
 	1    0    0    -1  
 $EndComp
-Text Label 1050 3700 2    50   ~ 0
+Text Label 1050 3600 2    50   ~ 0
 piston
 Wire Wire Line
 	8300 2700 8550 2700
@@ -1287,17 +1286,6 @@ F 1 "GND" V 1055 3172 50  0000 R CNN
 F 2 "" H 1050 3300 50  0001 C CNN
 F 3 "" H 1050 3300 50  0001 C CNN
 	1    1050 3300
-	0    1    -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CDECC4E
-P 1050 4000
-F 0 "#PWR?" H 1050 3750 50  0001 C CNN
-F 1 "GND" V 1055 3872 50  0000 R CNN
-F 2 "" H 1050 4000 50  0001 C CNN
-F 3 "" H 1050 4000 50  0001 C CNN
-	1    1050 4000
 	0    1    -1   0   
 $EndComp
 $EndSCHEMATC
